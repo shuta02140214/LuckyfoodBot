@@ -24,7 +24,7 @@ async def on_ready():
 async def lucky_food():
     now = datetime.datetime.now()
 
-    if now.hour == 22 and now.minute == 46:
+    if now.hour == 23 and now.minute == 00:
         channel = bot.get_channel(CHANNEL_ID)
         food = random.choice(foods)
         await channel.send(f"☀️ 今日のラッキーフードは **{food}** です！")
